@@ -39,100 +39,72 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-5 col-md-8 bg-black ">
-                        <form class="rounded-2 shadow-5-strong p-5" id="formrecv">
+                        <form class="rounded-2 shadow-5-strong p-5" id="formwl">
                             <!-- Email input -->
 
-                            <h2 class="text-center text-white">Inscreva-se em nossa lista de espera!</h2>
+                            <h2 class="text-center text-white wlh2">Inscreva-se em nossa lista de espera!</h2>
 
-                            <!-- <div class="form-outline mb-4">
-                                <input type="text" class="form-control inputfield" placeholder="Nome" />
-                            </div>
-                            <div class="form-outline mb-4">
-                                <input type="text" class="form-control inputfield" placeholder="Sobrenome" />
-                            </div>
-
-                            <div class="form-outline mb-4">
-                                <input type="text" class="form-control inputfield" placeholder="RG" />
-                            </div>
-
-                            <div class="form-outline mb-4">
-                                <input type="email" class="form-control email inputfield" placeholder="E-mail"
-                                    oninput="emailValidation()" />
-                                <span class="span-email">Digite um email válido. Exemplo: exemplo@exemplo.com</span>
-                            </div>
-
-                            <div class="form-outline mb-4">
-                                <input type="password" class="form-control inputfield pass" placeholder="Senha" />
-                            </div>
-
-                            <div class="form-outline mb-4">
-                                <input type="password" class="form-control inputfield confirmpass" placeholder="Confirme sua senha" />
-
-                            </div> -->
-
-                            <div class="row g-3">
-                                <div class="col-md-6">
+                            <div class="row g-3 allwl">
+                                <div class="col-mb-4">
                                     <input type="text" class="form-control inputfield" id="inputFirstName"
-                                        placeholder="Nome">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control inputfield" id="inputLastName"
-                                        placeholder="Sobrenome">
+                                        placeholder="Nome Completo" required>
                                 </div>
 
                                 <div class="col-mb-4">
-                                    <input type="text" class="form-control inputfield" placeholder="RG" />
+                                    <input type="text" class="form-control inputfield inputrg" placeholder="RG" required />
                                 </div>
 
                                 <div class="col-mb-4">
                                     <input type="email" class="form-control email inputfield" placeholder="E-mail"
-                                        oninput="emailValidation()" />
+                                        oninput="emailValidation()" required />
                                     <span class="span-email">Digite um email válido. Exemplo: exemplo@exemplo.com</span>
                                 </div>
 
                                 <div class="col-mb-4">
-                                    <input type="password" class="form-control inputfield pass" placeholder="Senha" />
+                                    <input type="password" class="form-control inputfield pass" placeholder="Senha"  oninput="passValidation()" required/>
+                                    <span class="span-pass">A senha deve conter no mínimo 8 caracteres, com pelo menos uma letra maiúscula, uma letra minúscula e um caractere especial.</span>
                                 </div>
 
                                 <div class="col-mb-4">
-                                    <input type="password" class="form-control inputfield confirmpass"
-                                        placeholder="Confirme sua senha" />
+                                    <input type="password" class="form-control inputfield confirmpass" placeholder="Confirme sua senha" oninput="passEqual () "required/>
+                                    <span class="span-passconfirm">As senhas não coincidem</span>
 
                                 </div>
 
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control inputfield" id="inputZip" placeholder="CEP">
+                                    <input type="text" class="form-control inputfield" id="cep" placeholder="Digite seu CEP" minlength="8" maxlength="8" required>
+                                    <span class="span-cep">O CEP digitado não existe. Por favor, verifique se o CEP foi digitado corretamente.</span>
                                 </div>
 
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control inputfield" id="inputState"
-                                        placeholder="Estado">
+                                    <input type="text" class="form-control inputfield" id="state"
+                                        placeholder="Estado" disabled data-input>
                                 </div>
 
                                 <div class="col-12">
-                                    <input type="text" class="form-control " id="inputAddress1" placeholder="Endereço">
+                                    <input type="text" class="form-control inputfield" id="address" placeholder="Endereço" disabled data-input>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control inputfield" id="inputHouse"
-                                        placeholder="Número">
+                                    <input type="text" class="form-control inputfield" id="numberAddress"
+                                        placeholder="Número" disabled data-input required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control inputfield" id="inputHouse2"
-                                        placeholder="Complemento">
+                                    <input type="text" class="form-control inputfield" id="addressComp"
+                                        placeholder="Complemento" disabled data-input>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control inputfield" id="inputCity1"
-                                        placeholder="Bairro">
+                                    <input type="text" class="form-control inputfield" id="neighborhood"
+                                        placeholder="Bairro" disabled data-input>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control inputfield" id="inputCity2"
-                                        placeholder="Cidade">
+                                    <input type="text" class="form-control inputfield" id="city"
+                                        placeholder="Cidade" disabled data-input>
                                 </div>
 
 
                             </div>
 
-                            <div class="row mb-4 mt-4">
+                            <div class="row mb-4 mt-4 btnwl">
 
 
                                 <button type="submit" class="btn btn-primary btnsend waitlist" id="btnsend">Quero entrar
@@ -234,6 +206,7 @@
     <script src="./js/validation.js"></script>
     <script src="./js/waitlist.js"></script>
     <script src="./js/view.js"></script>
+
 </body>
 
 </html>

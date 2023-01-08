@@ -558,7 +558,7 @@ color: #4953a0;
     font-weight: 700;
 }
 
-.span-email{
+.span-email, .span-pass, .span-passconfirm, .span-cep{
     font-size: 13px;
     margin: 3px 0 0 1px;
     color: red;
@@ -570,4 +570,10 @@ color: #4953a0;
 
 .return{
     display: none;
+}
+
+/* ------------------------------------- Lista de espera --------------------------------- */
+
+#formwl input:disabled{
+    background-color: #999;
 }
