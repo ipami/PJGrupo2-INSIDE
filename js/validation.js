@@ -17,18 +17,6 @@ const pChange = document.querySelector('.pchange')
 
 /*======================================== Validação dos campos =====================================*/
 
-function showErr(input, span) {
-    input.style.border = '2px solid red';
-    span.style.display = 'block';
-}
-
-
-function removeErr(input, span) {
-    input.style.border = '2px solid black';
-    span.style.display = 'none';
-}
-
-
 
 function emailValidation() {
     if (emailRx.test(inputEmail.value)) {
@@ -38,8 +26,4 @@ function emailValidation() {
     }
 }
 
-
-/*======================================== Página de recuperação de senha =====================================*/
-
-/*======================================== Ambos os formulários juntos não estão funcionando =====================================*/
 

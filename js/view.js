@@ -1,4 +1,4 @@
-// Efeito do texto da home
+/*======================================== Efeito de mudança de texto na página inicial =====================================*/
 
 let div = document.getElementById('textinfo');
 let txt = document.getElementById('fixo');
@@ -51,7 +51,7 @@ function typing(content, el) {
 }
 typing(words);
 
-// Mudança de card do plano
+/*======================================== Mudança nos cards de planos - página do produto =====================================*/
 
 const flr = document.getElementById('flright')
 const fll = document.getElementById('flleft')
@@ -61,21 +61,6 @@ const planB = document.getElementById('planb')
 const planC = document.getElementById('planc')
 
 
-
-if (planA.style.display == 'flex') {
-    planA.style.display = 'none'
-    planB.style.display = 'flex'
-    planC.style.display = 'none'
-} else if (planB.style.display == 'flex') {
-    planA.style.display = 'none'
-    planB.style.display = 'none'
-    planC.style.display = 'flex'
-
-} else {
-    planA.style.display = 'flex'
-    planB.style.display = 'none'
-    planC.style.display = 'none'
-}
 
 
 
@@ -118,8 +103,22 @@ fll.addEventListener('click', function changeCardLeft() {
 })
 
 
+/*======================================== Mudança estética na validação dos campos =====================================*/
 
-//---------------------------------------Mudanças de display das páginas Login e Recuperação de senha 
+function showErr(input, span) {
+    input.style.border = '2px solid red';
+    span.style.display = 'block';
+}
+
+
+function removeErr(input, span) {
+    input.style.border = '2px solid black';
+    span.style.display = 'none';
+}
+
+
+
+/*======================================== Mudanças de display das páginas Login e Recuperação de senha =====================================*/
 
 function changeDisplay(page) {
     if (page == 'recovery') {

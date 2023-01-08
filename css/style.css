@@ -533,6 +533,7 @@ color: #4953a0;
  .options{
     width: 100%;
     padding-bottom: 10%;
+    cursor: pointer;
 
  }
 
