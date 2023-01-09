@@ -82,11 +82,14 @@ function changeDisplay(page) {
         msgLogin.innerHTML = 'Login realizado com sucesso!';
         msgLogin.style.display = 'block';
     }  else if (page == 'waitlist') {
-        dpWL.style.display = 'none';
-        btnWL.style.display = 'none';
-        txtWL.innerHTML = 'Inscrição realizada com sucesso!';
-        txtWL.display ='Flex';
+        console.log ('funcionando?')
         imgTop.style.display = 'none';
+        dpWL.style.display = 'none';
+        console.log(txtWL)
+        txtWL.innerHTML = 'Inscrição realizada com sucesso!';
+        console.log(txtWL)
+        txtWL.style.display ='flex';
+
     } 
 }
 
