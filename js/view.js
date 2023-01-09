@@ -85,6 +85,8 @@ function changeDisplay(page) {
         dpWL.style.display = 'none';
         btnWL.style.display = 'none';
         txtWL.innerHTML = 'Inscrição realizada com sucesso!';
+        txtWL.display ='Flex';
+        imgTop.style.display = 'none';
     } 
 }
 

@@ -38,43 +38,38 @@ a {
 }
 
 
-/* Mapa */
-
-@media (max-width: 900px) {
-    #imgcell{
-        width: 300px;
-        margin-left: 0;
-    }
+/* Rodapé */
+#copy {
+    background-color: #f2f2f2;
 
 }
 
-
-@media (max-width: 420px) {
-    iframe {
-        width: 250px;
-        height: 150px;
-    }
-
-    .p-2 img,
-    .fieldtext, .txfixo{
-        display: none;
-    }
-
-    .imgdisplay {
-        display: flex;
-    }
-
-    .txtdescription p{
-        padding: 0 10%;
-    }
+footer hr {
+    color: white;
+    border: 2px solid white;
+    opacity: 1;
 }
 
-@media (max-width: 250px) {
-    iframe {
-        width: 200px;
-        height: 100px;
-    }
+#imgfooter {
+    width: 14%;
 }
+
+#imgsistem {
+    width: 45%;
+}
+
+footer h5 {
+    font-size: clamp (10px, 5vw, 20px);
+}
+
+footer h3 {
+    font-size: clamp (15px, 5vw, 25px);
+}
+
+.downapp {
+    width: 30%;
+}
+
 
 
 /* ------------------------------------- HOME --------------------------------- */
@@ -113,7 +108,7 @@ h2 {
     display: none;
 }
 
-.txfixo{
+.txfixo {
     color: #00ff74;
     font-size: clamp(10px, 5vw, 25px);
     margin-left: 10px;
@@ -135,7 +130,7 @@ h2 {
 #description {
     color: black;
     background-color: white;
-    display:flex;
+    display: flex;
 
 }
 
@@ -145,31 +140,31 @@ h2 {
 
 }
 
-#imgcell{
+#imgcell {
     padding: 10% 0;
     margin-left: 60%;
 }
 
 
-.txtdescription p{
+.txtdescription p {
     padding: 0 28%;
 }
 
 .container-text {
     display: flex;
-   
+
 }
 
-.texto{
+.texto {
     padding-left: 50px;
-    width:630px;
+    width: 630px;
     text-align: left;
     margin-top: 40px;
     margin-bottom: 40px;
     background-color: pink;
 }
 
-#btnhome{
+#btnhome {
     background-color: #00ffff;
     font-weight: bolder;
     border: 0;
@@ -263,7 +258,7 @@ color: #4953a0;
     background-color: white;
     padding: 30px;
     position: absolute;
-    top: 5%;
+    top: 7%;
     left: 10%;
     border: 2px solid black;
     border-radius: 20px;
@@ -274,8 +269,7 @@ color: #4953a0;
     width: 30%;
     font-size: clamp(10px, 5vw, 15px);
     list-style-image: url(../images/flegmini.png);
-    padding-left: 17%;
-    
+    margin-left: 5px;
 }
 
 
@@ -294,7 +288,7 @@ color: #4953a0;
 }
 
 .spacedetails ul{
-    padding-left: 14%;
+ margin-left: 5px;
 }
 
 #plana, #planb, #planc{
@@ -346,11 +340,15 @@ color: #4953a0;
 }
 
 .title{
-    margin-top: 10px;
+    margin-top: 0px;
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
     background-color: #00ff74;
 }
 
 .btnplan{
+    margin-top: 20px;
     background-color: white;
 }
 
@@ -362,101 +360,112 @@ color: #4953a0;
 }
 
 .pgimgs{
-    width: 110%;
+    width: 100%;
+    margin-top: 35px;
 
 }
 
+
+
 @media (max-width: 900px) {
-    .details{
+
+
+    .details {
         width: 80%;
         top: 5%;
         left: 10%;
- 
+
     }
 
-    
-    .typeofplan{
-    
+
+    .typeofplan {
+
         width: 28.2%;
         left: 36.3%;
 
     }
-    
-    
-    .quality{
-        flex-wrap:wrap;
+
+
+    .quality {
+        flex-wrap: wrap;
         height: auto;
 
+    }
+    .ilust{
+        width: 100%;
     }
 }
 
 @media (max-width: 530px) {
-    .changefl{
+    .changefl {
         flex-direction: column;
     }
 
-    .txtinfo{
+    .txtinfo {
         width: 100%;
     }
-    .txtproduct{
-        flex-wrap:wrap ;
+
+    .txtproduct {
+        flex-wrap: wrap;
         flex-direction: column;
     }
 
-    .planos{
-        height: 800px;
+    .planos {
+        height: 950px;
         position: none;
         margin: 0;
-        padding:0;
+        padding: 0;
     }
 
 
-    .txtdetails{
+    .txtdetails {
 
         margin-bottom: -50px;
 
     }
 
-    .details{
+    .details {
         width: 100%;
         position: none;
         flex-direction: column;
         margin: 0;
         flex-wrap: wrap;
         top: 0;
-        left:0;
- 
+        left: 0;
+
     }
 
-    
-    .typeofplan{
-        height: 350px ;
+
+    .typeofplan {
+        height: 450px;
         position: none;
         padding: 0 15%;
         width: 100%;
         top: 51%;
-        left:0;
+        left: 0;
 
     }
 
-    .spacedetails{
+    .spacedetails {
 
         width: 100%
-        
     }
-    
-    
-    .insidepb{
+
+
+    .insidepb {
         width: 80%;
         margin-top: 30%;
         margin-bottom: 10%;
     }
-    
-    .txtdetails{
-    
+
+    .ilust{
+        width: 80%;
+    }
+    .txtdetails {
+
         padding-bottom: 30%;
     }
-    
+
 }
 
 /* ------------------------------------- LOGIN --------------------------------- */
@@ -464,12 +473,12 @@ color: #4953a0;
 /* Corpo da página */
 
 
-.logincontainer{
+.logincontainer {
     background-image: url(../images/fundo-login-original.jpg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 900px ;
+    height: auto;
     padding: 10% 0;
 }
 
@@ -479,31 +488,31 @@ color: #4953a0;
 }
 
 .inputfield {
-    border: 2px  solid black;
+    border: 2px solid black;
 }
 
 .inputfield:focus {
-    border: 2px  solid #00ff74;
+    border: 2px solid #00ff74;
     background-color: black;
     color: #00ff74;
 }
 
-.inputfield:focus::placeholder{
+.inputfield:focus::placeholder {
     color: #00ff74;
 }
 
-.checkboxRemember:checked{
+.checkboxRemember:checked {
     background-color: #00ff74;
     color: black;
 }
 
-.remember{
+.remember {
     color: white;
 }
 
-#forgot{
+#forgot {
     color: #00ff74;
-    text-decoration:underline;
+    text-decoration: underline;
 
 }
 
@@ -512,7 +521,7 @@ color: #4953a0;
     height: 100vh;
 }
 
-#btnsend{
+#btnsend {
     background-color: #00ff74;
     color: black;
     font-weight: 800;
@@ -520,45 +529,44 @@ color: #4953a0;
     width: 94%;
     margin-left: 3.5%;
     margin-top: 2%;
- }
- 
+}
 
- #whiteline{
+
+#whiteline {
     color: white;
     opacity: 1;
     margin: -10% 7% 3% 7%;
 
- }
+}
 
- .options{
+.options {
     width: 100%;
     padding-bottom: 10%;
     cursor: pointer;
 
- }
+}
 
- .group{
+.group {
     border: 2px solid transparent;
     border-image: linear-gradient(to right, #4953a0, #63c0b9, #28d9aa);
     border-image-slice: 1;
     width: 86%;
     height: 45px
+}
 
- }
-
-.ac-logo{
+.ac-logo {
     width: 35px;
     height: 35px;
     margin: 0 5%;
 }
 
-.txt-op{
+.txt-op {
     margin-top: 3.8%;
     color: white;
     font-weight: 700;
 }
 
-.span-email, .span-pass, .span-passconfirm, .span-cep{
+.span-email, .span-pass, .span-passconfirm, .span-cep {
     font-size: 13px;
     margin: 3px 0 0 1px;
     color: red;
@@ -568,12 +576,135 @@ color: #4953a0;
 
 /* ------------------------------------- Recuperação de senha --------------------------------- */
 
-.return{
+.return {
     display: none;
 }
 
 /* ------------------------------------- Lista de espera --------------------------------- */
 
-#formwl input:disabled{
+.wlcontainer {
+    background-color: black;
+    height: auto;
+
+}
+
+.wlh2 {
+    display: none;
+}
+
+#formwl input:disabled {
     background-color: #999;
+}
+
+.imgtop img{
+    width: 105%;
+}
+
+.btnwl {
+    margin-top: -1.8%;
+    margin-left: -3%;
+}
+
+
+/* ------------------------------------- Contato --------------------------------- */
+
+.github{
+    width: 30px;
+    height: 30px;
+}
+
+.linkedin{
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.col-auto{
+margin-left: 3px;
+margin-top: 90px;
+height: 500px;
+width: 280px;
+
+}
+   
+   
+
+
+/* ------------------------------------- Media --------------------------------- */
+
+@media (max-width: 900px) {
+    #imgcell {
+        width: 300px;
+        margin-left: 0;
+    }
+
+}
+
+
+@media (max-width: 620px) {
+    iframe {
+        width: 250px;
+        height: 150px;
+    }
+
+    .p-2 img,
+    .fieldtext, .txfixo {
+        display: none;
+    }
+
+    .imgdisplay {
+        display: flex;
+    }
+
+    .txtdescription p {
+        padding: 0 10%;
+    }
+
+    #imgfooter {
+        display: none;
+    }
+
+    .firstfooter, .secondfooter {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .downapp {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 450px) {
+
+.wlh2 {
+    display: block;
+}
+
+
+.imgtop img{
+    display: none;
+}
+
+.btnwl {
+    margin-top: 18%;
+    margin-left: -3%;
+}
+.container{
+    padding: 0;
+    margin: 0;
+}
+}
+
+@media (max-width: 250px) {
+    iframe {
+        display: none;
+    }
 }
