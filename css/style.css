@@ -53,7 +53,7 @@ a {
 }
 
 #imgsistem {
-    width: 45%;
+    width: 100%;
 }
 
 .footer-icon:hover{
@@ -650,6 +650,7 @@ width: 280px;
         margin-left: 0;
     }
 
+
 }
 
 
@@ -685,6 +686,10 @@ width: 280px;
     .downapp {
         width: 100%;
     }
+    #imgsistem {
+        width: 30%;
+    }
+
 }
 
 
